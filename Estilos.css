@@ -1,0 +1,71 @@
+/*
+Tema: Mario Bros (Super Mario Retro Arcade)
+Autor: Gemini
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+--mario-red: #E52521;
+--mario-blue: #002FBE;
+--mario-yellow: #FBD000;
+--mario-green: #43B02A;
+--sky-blue: #5C94FC;
+--brick-brown: #B83A00;
+--ground-brown: #C46C14;
+--coin-gold: #FFD700;
+}
+
+body {
+background-color: var(--sky-blue);
+background-image:
+radial-gradient(white 15%, transparent 16%),
+radial-gradient(white 15%, transparent 16%);
+background-size: 60px 60px;
+background-position: 0 0, 30px 30px;
+font-family: 'Press Start 2P', monospace, sans-serif;
+color: #FFFFFF;
+text-align: center;
+margin: 0;
+padding: 40px 20px;
+line-height: 1.8;
+}
+
+h1 {
+color: var(--mario-yellow);
+text-shadow: 4px 4px 0px #000000, 6px 6px 0px var(--mario-red);
+font-size: 2rem;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+
+h2 {
+color: #FFFFFF;
+text-shadow: 3px 3px 0px #000000;
+font-size: 1.2rem;
+margin-bottom: 30px;
+}
+
+p {
+background-color: rgba(0, 0, 0, 0.7);
+border: 4px solid var(--mario-yellow);
+border-radius: 8px;
+max-width: 600px;
+margin: 20px auto;
+padding: 20px;
+font-size: 0.85rem;
+color: #FFF;
+box-shadow: 0px 6px 0px #000000;
+}
+
+img {
+border: 6px solid var(--mario-yellow);
+border-radius: 12px;
+box-shadow: 0px 8px 0px #000000;
+margin-top: 30px;
+transition: transform 0.2s ease;
+}
+
+img:hover {
+transform: scale(1.05);
+}
